@@ -1,4 +1,5 @@
 #!/bin/sh
+mkdir -p ./output
 scrapy crawl eastmoney -o ./output/eastmoney.json
 scrapy crawl 10jqka -o ./output/a10jqka.json
 scrapy crawl qq -o ./output/qq.json
