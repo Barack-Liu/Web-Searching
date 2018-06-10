@@ -6,7 +6,7 @@ It is a website for financial news.
 The spider framework uses scrapy.and database is mysql.
 The website is based on HTML+CSS+bootstrap+javascript.
 	
-run spider: /edu_news_spider/main.py
+run spider: ./finance_spider/start.sh
 
 open website: /myNews/news/templates/ search_base.html
 
