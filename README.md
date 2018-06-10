@@ -7,6 +7,7 @@ The spider framework uses scrapy.and database is mysql.
 HTML+CSS+bootstrap+javascript
 	
 run spider: /edu_news_spider/main.py
+
 open website: /myNews/news/templates/ search_base.html
 
 
