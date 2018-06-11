@@ -24,8 +24,8 @@ Your data should be stored in plain text format. Each line should be a json of o
 | Name        |       Task  |
 | --------   |  :----: |
 | LCY       | Spider模块（使用Scrapy）及文档；<br>  For each website we give, you need to crawl all the news starting from year 2015 (including 2015) up to now;  <br> Your system should work in real-times；         |
-| LHY        | Website模块（使用Django）及文档；  Support several search methods；  Manually design or automatic generate proper categories and classify the crawled news into those categories；         |
-| XRC        | 数据库模块（使用MySQL）及文档；  Website模块（使用Django）及文档；  Support news recommendation；Allow users to track some topics；         |
+| LHY        | Website模块（使用Django）及文档；<br>   Support several search methods；<br>   Manually design or automatic generate proper categories and classify the crawled news into those categories；         |
+| XRC        | 数据库模块（使用MySQL）及文档；<br>   Website模块（使用Django）及文档；<br>   Support news recommendation；Allow users to track some topics；         |
 
 
 
@@ -41,4 +41,4 @@ http://finance.qq.com
 http://www.cnstock.com  
 中国证券网  <br> 
 http://business.sohu.com  
-搜狐财经  
+搜狐财经 <br>  
