@@ -1,0 +1,14 @@
+.img-tab {
+    max-height: 225px;
+    max-width: 280px;
+    min-height: 200px;
+}
+
+.img-mobile {
+    max-width: 300px;
+}
+
+.img-PC {
+    max-width: 1200px;
+}
+
