@@ -3,7 +3,11 @@
 ## 	Execution
 run spider: cd finance_spider/ && ./start.sh
 
-open website: /myNews/news/templates/ search_base.html
+Website Demo:<br> 
+1.cd NewsAggregationWebsiteKoa2 && npm install <br>
+2.cd PhoenixNews && python3 main.py <br>
+3.cd NewsAggregationWebsiteKoa2 && npm start <br>
+4.surf on http://localhost:3000/ to view website demo
 
 ## Project Description
 In this project, you are asked to build a simple financial news website. All your data should be crawled from the following websites. These are some Chinese financial news websites. Note that for each website we give, you need to crawl all the news starting from year 2015 (including 2015) up to now.
