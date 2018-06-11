@@ -23,15 +23,13 @@ Your data should be stored in plain text format. Each line should be a json of o
 ## Task Allocation
 | Name        |       Task  |
 | --------   |  :----: |
-| LCY       | Spider模块（使用Scrapy）及文档；  For each website we give, you need to crawl all the news starting from year 2015 (including 2015) up to now;  Your system should work in real-times；         |
+| LCY       | Spider模块（使用Scrapy）及文档；  
+For each website we give, you need to crawl all the news starting from year 2015 (including 2015) up to now;  
+Your system should work in real-times；         |
 | LHY        | Website模块（使用Django）及文档；  Support several search methods；  Manually design or automatic generate proper categories and classify the crawled news into those categories；         |
 | XRC        | 数据库模块（使用MySQL）及文档；  Website模块（使用Django）及文档；  Support news recommendation；Allow users to track some topics；         |
 
-```
-LCY	Spider模块（使用Scrapy）及文档；  For each website we give, you need to crawl all the news starting from year 2015 (including 2015) up to now;  Your system should work in real-times；
-LHY	Website模块（使用Django）及文档；  Support several search methods；  Manually design or automatic generate proper categories and classify the crawled news into those categories；
-XRC	数据库模块（使用MySQL）及文档；  Website模块（使用Django）及文档；  Support news recommendation；Allow users to track some topics；
-```
+
 
 ## Chinese financial news
 http://www.eastmoney.com  
