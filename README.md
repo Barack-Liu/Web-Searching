@@ -9,6 +9,11 @@ Website Demo:<br>
 3.cd NewsAggregationWebsiteKoa2 && npm start <br>
 4.surf on http://localhost:3000/ to view website demo
 
+# Update Record LHY
+20180611-Website demo running
+
+20180611-Needs to connect to DB and develop searching function
+
 ## Project Description
 In this project, you are asked to build a simple financial news website. All your data should be crawled from the following websites. These are some Chinese financial news websites. Note that for each website we give, you need to crawl all the news starting from year 2015 (including 2015) up to now.
 
@@ -17,7 +22,7 @@ Your data should be stored in plain text format. Each line should be a json of o
 
 
 ## Requirements
-0.(Basic) For each website we give, you need to crawl all the news starting from year 2015 (including 2015) up to now.
+0. (Basic) For each website we give, you need to crawl all the news starting from year 2015 (including 2015) up to now.
 1. (about 30% scores) Support several search methods. Firstly, user can just input some keywords, you need to search these keywords in the whole database and return a list of news. Secondly, user can choose search in the title or search in everywhere. Thirdly, users can limit which year of news they want when doing search. 
 2. (about 20% scores) Manually design or automatic generate proper categories and classify the crawled news into those categories. 
 3. (about 30% scores) Support news recommendation. After reading one or more piece of news, you need to find topics which are interesting for this user and recommend some piece of news. 
