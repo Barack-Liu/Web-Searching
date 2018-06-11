@@ -4,7 +4,7 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>新闻搜索</title>
+    <title>Financial News</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
@@ -52,10 +52,10 @@
                             <br>
                             <ul class="nav nav-pills navbar-nav">
                             <li>
-                                <a href="#1">关于</a>
+                                <a href="#1">About</a>
                             </li>
                             <li>
-                                <a href="{%url 'news:contact' %}">联系我们</a>
+                                <a href="news/contact.html">Contact Us</a>
                             </li>
                             </ul>
                         </div>
@@ -73,12 +73,12 @@
                         <ul class="nav nav-pills navbar-nav">
 
                             <li>
-                                <a href="{%url 'news:index' %}">首页</a>
+                                <a href="news/index.html">Home Page</a>
                             </li>
                              <li>
-                                <a href="{%url 'news:about' %}">排行榜</a>
+                                <a href="news/about.html">Ranking</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="{%url 'news:school' %}">校园</a>
                             </li>
                             <li>
@@ -107,7 +107,7 @@
                             </li>
                              <li>
                                 <a href="{%url 'news:immigrant' %}">移民</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </nav>
@@ -118,14 +118,14 @@
         <div class="widewrapper subheader">
             <div class="container">
                 <div class="clean-breadcrumb">
-                    <a href="{%url 'search' %}">新闻</a>
+                    <a href="search/search.html">Financial News</a>
                 </div>
 
                 <div class="clean-searchbox">
                     <form action="/search/" method="get" accept-charset="utf-8">
                         &emsp;&emsp;&emsp;&emsp;
-                        <a href="{%url 'search' %}"><button class="searchbutton" type="submit">
-                            ...搜索新闻<i class="fa fa-search"></i>
+                        <a href="search/search.html"><button class="searchbutton" type="submit">
+                            Find More News<i class="fa fa-search"></i>
                         </button></a>
                     </form>
                 </div>
