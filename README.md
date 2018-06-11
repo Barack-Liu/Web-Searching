@@ -42,3 +42,6 @@ http://www.cnstock.com
 中国证券网  <br> 
 http://business.sohu.com  
 搜狐财经 <br>  
+
+## Reference
+https://github.com/Uyouii/NewsAggregationWebsiteKoa2
