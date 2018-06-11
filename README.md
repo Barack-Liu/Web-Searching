@@ -8,11 +8,11 @@ open website: /myNews/news/templates/ search_base.html
 ## Project Description
 In this project, you are asked to build a simple financial news website. All your data should be crawled from the following websites. These are some Chinese financial news websites. Note that for each website we give, you need to crawl all the news starting from year 2015 (including 2015) up to now.
 
-##Data format
+## Data format
 Your data should be stored in plain text format. Each line should be a json of one document. For each document json should be like, doc= {“content”: “xxx”, “source”: “xxx”, “time”: “xxx”, “title”: “xxx”, “url”: “xxx”}.
 
 
-##Requirements
+## Requirements
 0.(Basic) For each website we give, you need to crawl all the news starting from year 2015 (including 2015) up to now.
 1. (about 30% scores) Support several search methods. Firstly, user can just input some keywords, you need to search these keywords in the whole database and return a list of news. Secondly, user can choose search in the title or search in everywhere. Thirdly, users can limit which year of news they want when doing search. 
 2. (about 20% scores) Manually design or automatic generate proper categories and classify the crawled news into those categories. 
@@ -22,21 +22,21 @@ Your data should be stored in plain text format. Each line should be a json of o
 
 ## Task Allocation
 ```
-LCY	Spider模块（使用Scrapy）及文档；For each website we give, you need to crawl all the news starting from year 2015 (including 2015) up to now;Your system should work in real-times；
-LHY	Website模块（使用Django）及文档；Support several search methods；Manually design or automatic generate proper categories and classify the crawled news into those categories；
-XRC	数据库模块（使用MySQL）及文档；Website模块（使用Django）及文档；Support news recommendation；Allow users to track some topics；
+LCY	Spider模块（使用Scrapy）及文档；  For each website we give, you need to crawl all the news starting from year 2015 (including 2015) up to now;  Your system should work in real-times；
+LHY	Website模块（使用Django）及文档；  Support several search methods；  Manually design or automatic generate proper categories and classify the crawled news into those categories；
+XRC	数据库模块（使用MySQL）及文档；  Website模块（使用Django）及文档；  Support news recommendation；Allow users to track some topics；
 ```
 
 ## Chinese financial news
-http://www.eastmoney.com
-东方财富网
-http://finance.sina.com.cn 
-新浪财经
-http://www.10jqka.com.cn
-同花顺财经
-http://finance.qq.com
-腾讯财经
-http://www.cnstock.com
-中国证券网
-http://business.sohu.com
-搜狐财经
+http://www.eastmoney.com  
+东方财富网  
+http://finance.sina.com.cn   
+新浪财经  
+http://www.10jqka.com.cn  
+同花顺财经  
+http://finance.qq.com  
+腾讯财经  
+http://www.cnstock.com  
+中国证券网  
+http://business.sohu.com  
+搜狐财经  
