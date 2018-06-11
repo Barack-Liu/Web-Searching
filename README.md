@@ -9,10 +9,10 @@ Website Demo:<br>
 3.cd NewsAggregationWebsiteKoa2 && npm start <br>
 4.surf on http://localhost:3000/ to view website demo
 
-# Update Record LHY
-20180611-Website demo running
+# Update Record
+0611-LHY-Website demo running
 
-20180611-Needs to connect to DB and develop searching function
+0611-LHY-Needs to connect to DB and develop searching function
 
 ## Project Description
 In this project, you are asked to build a simple financial news website. All your data should be crawled from the following websites. These are some Chinese financial news websites. Note that for each website we give, you need to crawl all the news starting from year 2015 (including 2015) up to now.
