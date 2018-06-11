@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>news_lists</title>
-    <meta name="description" content="新闻列表页">
+    <meta name="description" content="News List">
     <meta name="viewport" content="width=device-width">
 
     <link rel="icon" href="../../static/img/favicon.ico" type="image/x-icon">
@@ -33,12 +33,12 @@
                <div class="col-md-8">
                     <div class="row">
                         <div class="col-md-4">
-                         <a href="{%url 'news:index' %}" id="logo">
+                         <a href="news/index.html" id="logo">
                              <img src="../../static/img/logo.png" alt="clean Blog">
                          </a>
                         </div>
                         <div class="col-md-8">
-                        <a href="{%url 'news:index' %}" id="name">
+                        <a href="news/index.html" id="name">
                              <img src="../../static/img/name.png" alt="clean Blog">
                          </a>
                         </div>
@@ -50,10 +50,10 @@
                         <div class="collapse navbar-collapse">
                             <ul class="nav nav-pills navbar-nav">
                             <li>
-                                <a href="#1">关于</a>
+                                <a href="#1">About</a>
                             </li>
                             <li>
-                                <a href="{%url 'news:contact' %}">联系我们</a>
+                                <a href="news/contact.html">Contact Us</a>
                             </li>
                             </ul>
                         </div>
@@ -71,12 +71,12 @@
                         <ul class="nav nav-pills navbar-nav">
                           
                              <li>
-                                <a href="{%url 'news:index' %}">首页</a>
+                                <a href="news/index.html">Home Page</a>
                             </li>
                              <li>
-                                <a href="{%url 'news:about' %}">排行</a>
+                                <a href="news/about.html">Ranking</a>
                             </li>
-                            <li>
+                          <!--   <li>
                                 <a href="{%url 'news:school' %}">校园</a>
                             </li>
                             <li>
@@ -84,8 +84,8 @@
                             </li>
                             <li>
                                 <a href="{%url 'news:high_test' %}">高考</a>
-                            </li>
-                            <li>
+                            </li> -->
+                        <!--     <li>
                                 <a href="{%url 'news:college_test' %}">考研</a>
                             </li> 
                             <li>
@@ -105,7 +105,7 @@
                             </li>
                              <li>
                                 <a href="{%url 'news:immigrant' %}">移民</a>
-                            </li>                 
+                            </li>         -->         
                         </ul>
                     </div>
                 </nav>        
@@ -116,13 +116,14 @@
         <div class="widewrapper subheader">
             <div class="container">
                 <div class="clean-breadcrumb">
-                    <a href="/search/">新闻</a>
+                    <a href="../search/search.html">News</a>
                     <span class="separator">&#x2F;</span>
 
-                    {% ifequal name.0 "教育" %}
-                    <a href="{%url 'news:about' %}">{{name.0}}</a>
-                    {% endifequal %}
-                    {% ifequal name.0 "校园" %}
+                   <!--  {% ifequal name.0 "教育" %}
+                    <a href="news/about.html">{{name.0}}</a>
+                    {% endifequal %} -->
+
+                  <!--   {% ifequal name.0 "校园" %}
                     <a href="{%url 'news:school' %}">{{name.0}}</a>
                     {% endifequal %}
                     {% ifequal name.0 "中考" %}
@@ -151,14 +152,14 @@
                     {% endifequal %}
                     {% ifequal name.0 "移民" %}
                     <a href="{%url 'news:immigrant' %}">{{name.0}}</a>
-                    {% endifequal %}
+                    {% endifequal %} -->
                 </div>
 
                 <div class="clean-searchbox">
                    <form action="/search/" method="get" accept-charset="utf-8">
                         &emsp;&emsp;&emsp;&emsp;
-                        <a href="{%url 'search'%}"><button class="searchbutton" type="submit">
-                            ...搜索新闻<i class="fa fa-search"></i>
+                        <a href="/search/search.html"><button class="searchbutton" type="submit">
+                            Search for News<i class="fa fa-search"></i>
                         </button></a>
                     </form>
                 </div>
@@ -171,7 +172,7 @@
             <div class="col-md-8 blog-main">
             <div class="list-group" >
                 <a href="#" class="list-group-item active">
-                    <h4 class="list-group-item-heading">{{name.0}}{{name.1}}资讯</h4>
+                    <h4 class="list-group-item-heading">{{name.0}}{{name.1}}Information</h4>
                 </a>
 
                 {% for news in Newses1 %}
@@ -183,11 +184,11 @@
 
                     <ul class="pager">
                         {% if Newses1.has_previous %}
-                        <li class="previous"> <a href="?page1={{ Newses1.previous_page_number }}">上一页</a></li>
+                        <li class="previous"> <a href="?page1={{ Newses1.previous_page_number }}">Previous Page</a></li>
                         {% endif %}
 
                         {% if Newses1.has_next %}
-                        <li class="next"><a href="?page1={{ Newses1.next_page_number }}">下一页</a></li>
+                        <li class="next"><a href="?page1={{ Newses1.next_page_number }}">Next Page</a></li>
                         {% endif %}
                     </ul>
 
@@ -203,7 +204,7 @@
                     
                     <div class="aside-widget">
                         <header>
-                           <a href="{%url 'news:hit' %}"> <h3>{{name.0}}{{name.2}}新闻</h3></a>
+                        <!--    <a href="{%url 'news:hit' %}"> <h3>{{name.0}}{{name.2}}News</h3></a> -->
                         </header>
                         <div class="body">
                             <ul class="clean-list">
@@ -213,11 +214,11 @@
                             </ul>
                             <ul class="pager">
                         {% if Newses2.has_previous %}
-                        <li class="previous"> <a href="?page2={{ Newses2.previous_page_number }}">上一页</a></li>
+                        <li class="previous"> <a href="?page2={{ Newses2.previous_page_number }}">Previous Page</a></li>
                         {% endif %}
 
                         {% if Newses2.has_next %}
-                        <li class="next"><a href="?page2={{ Newses2.next_page_number }}">下一页</a></li>
+                        <li class="next"><a href="?page2={{ Newses2.next_page_number }}">Next Page</a></li>
                         {% endif %}
                     </ul>
 
@@ -234,7 +235,7 @@
                         </header>
                         <div class="body clearfix">
                             <ul class="tags">
-                                <li><a href="{%url 'news:school' %}">校园</a></li>
+                           <!--      <li><a href="{%url 'news:school' %}">校园</a></li>
                                 <li><a href="{%url 'news:middle_test' %}">中考</a></li>
                                 <li><a href="{%url 'news:high_test' %}">高考</a></li>
                                 <li><a href="{%url 'news:college_test' %}">考研</a></li>
@@ -243,9 +244,9 @@
                                 <li><a href="{%url 'news:government' %}">公务员</a></li>
                                 <li><a href="{%url 'news:MBA' %}">商学院</a></li>
                                 <li><a href="{%url 'news:international' %}">国际学校</a></li>
-                                <li><a href="{%url 'news:immigrant' %}">移民</a></li>
-                                <li><a href="{%url 'news:about' %}">最新</a></li>
-                                <li><a href="{%url 'news:hit' %}">最热</a></li>
+                                <li><a href="{%url 'news:immigrant' %}">移民</a></li> -->
+                                <li><a href="news/about.html">Recent</a></li>
+ <!--                                <li><a href="{%url 'news:hit' %}">最热</a></li> -->
                             </ul>
                         </div>
                     </div>
@@ -276,7 +277,7 @@
                     </div>
 
                     <div class="col-md-4 footer-widget">
-                        <h3> <i class="fa fa-envelope"></i><a href="{%url 'news:about' %}">Contact Me</a></h3>
+                        <h3> <i class="fa fa-envelope"></i><a href="news/about.html">Contact Me</a></h3>
 
                         <p>If you have any problem, you can contact me.</p>
                         <p>You can send message to me!</p>

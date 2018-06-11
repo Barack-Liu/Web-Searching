@@ -39,7 +39,7 @@
                          </a>
                         </div>
                         <div class="col-md-8">
-                        <a href="{%url 'news:index' %}" id="name">
+                        <a href="news/index.html" id="name">
                              <img src="../static/img/name.png" alt="clean Blog">
                          </a>
                         </div>
@@ -137,10 +137,10 @@
         <div class="container ">
             <div class="row">
                 <div class="col-md-8 blog-main">
-                    {% block content %}
-                    <div></div>
+<!--                     {% block content %}
+                    </div><div>
                     {% endblock %}
-                    <br>
+                    <br> -->
                      <div class="row">
                          <div class="col-md-2"></div>
                          <div class="col-md-9 ">
@@ -214,13 +214,13 @@
                         <header>
                             <h3>Recent Financial News</h3>
                         </header>
-                        <div class="body" >
+<!--                         <div class="body" >
                             <ul class="clean-list" id="news1">
                                 {% for news in Newses1 %}
                                 <li><a href="{%url 'news:news_page' news.news_id%}">{{news.title}}</a><span class="label label-info">{{news.num_click}}</span></li>
                                 {% endfor %}
                             </ul>
-                            </div>
+                            </div> -->
                             <ul class="clean-list">
                              <li class="text-center">
                                  <a ><i class="fa fa-arrow-up" id="news1-prev"></i></a>
@@ -235,13 +235,13 @@
                         <header>
                             <h3>Top Financial News</h3>
                         </header>
-                        <div class="body" >
+ <!--                        <div class="body" >
                             <ul class="clean-list" id="news2" >
                                  {% for news in Newses2 %}
                                 <li><a href="{%url 'news:news_page' news.news_id%}">{{news.title}}</a><span class="label label-info">{{news.num_click}}</span></li>
                                 {% endfor %}
                             </ul>
-                        </div>
+                        </div> -->
                          <div>
                              <ul class="clean-list">
                                   <li class="text-center">
@@ -291,17 +291,17 @@
                        <p>The spider framework uses scrapy.and database is mysql.The website is based on HTML+CSS+bootstrap+javascript.</p>
                     </div>
 
-                    <div class="col-md-4 footer-widget">
+ <!--                    <div class="col-md-4 footer-widget">
                         <h3> <i class="fa fa-pencil"></i> Recent News</h3>
                         <ul class="clean-list">
                             {% for news in Newses3 %}
                                 <li><a href="{%url 'news:news_page' news.news_id%}">{{news.title}}</a><span class="badge">{{news.num_click}}</span></li>
                             {% endfor %}
                         </ul>
-                    </div>
+                    </div> -->
 
                     <div class="col-md-4 footer-widget">
-                        <h3> <i class="fa fa-envelope"></i><a href="">Contact Me</a></h3>
+                        <h3> <i class="fa fa-envelope"></i><a href="news/contact.html">Contact Me</a></h3>
 
                         <p>刘宏阳 117033910101</p>
                         <p>李昶蔚 117033910100</p>
