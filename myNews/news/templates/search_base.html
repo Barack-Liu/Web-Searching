@@ -34,13 +34,13 @@
                 <div class="col-md-8">
                     <div class="row">
                         <div class="col-md-4">
-                         <a href="{%url 'news:index' %}" id="logo">
-                             <img src="../../static/img/logo.png" alt="clean Blog">
+                         <a href="news/index.html" id="logo">
+                             <img src="../static/img/logo.png" alt="clean Blog">
                          </a>
                         </div>
                         <div class="col-md-8">
                         <a href="{%url 'news:index' %}" id="name">
-                             <img src="../../static/img/name.png" alt="clean Blog">
+                             <img src="../static/img/name.png" alt="clean Blog">
                          </a>
                         </div>
                     </div>
@@ -212,7 +212,7 @@
 
                     <div class="aside-widget">
                         <header>
-                            <h3>{{name.0}}{{name.1}}新闻</h3>
+                            <h3>Recent Financial News</h3>
                         </header>
                         <div class="body" >
                             <ul class="clean-list" id="news1">
@@ -225,7 +225,7 @@
                              <li class="text-center">
                                  <a ><i class="fa fa-arrow-up" id="news1-prev"></i></a>
                                  &emsp;&emsp;
-                                 <a href="{%url 'news:about' %}"><span class="text-danger">更多新闻</span></a>
+                                 <a href="news/about.html"><span class="text-danger">More News</span></a>
                                  &emsp;&emsp;
                                  <a ><i class="fa fa-arrow-down" id="news1-next"></i></a>
                              </li>
@@ -233,7 +233,7 @@
                     </div>
                      <div class="aside-widget">
                         <header>
-                            <h3>{{name.0}}{{name.2}}新闻</h3>
+                            <h3>Top Financial News</h3>
                         </header>
                         <div class="body" >
                             <ul class="clean-list" id="news2" >
@@ -247,7 +247,7 @@
                                   <li class="text-center">
                                  <a ><i class="fa fa-arrow-up" id="news2-prev"></i></a>
                                  &emsp;&emsp;
-                                 <a href="{%url 'news:hit' %}"><span class="text-danger">更多新闻</span></a>
+                                 <a href="news/about.html"><span class="text-danger">More News</span></a>
                                  &emsp;&emsp;
                                  <a ><i class="fa fa-arrow-down" id="news2-next"></i></a>
                              </li>
@@ -255,22 +255,22 @@
                     </div>
                      <div class="aside-widget">
                         <header>
-                            <h3>tags</h3>
+                            <h3>Tags</h3>
                         </header>
                         <div class="body clearfix">
                             <ul class="tags">
-                                <li><a href="{%url 'news:school' %}">校园</a></li>
-                                <li><a href="{%url 'news:middle_test' %}">中考</a></li>
-                                <li><a href="{%url 'news:high_test' %}">高考</a></li>
-                                <li><a href="{%url 'news:college_test' %}">考研</a></li>
-                                <li><a href="{%url 'news:english' %}">外语</a></li>
-                                <li><a href="{%url 'news:abroad' %}">留学</a></li>
-                                <li><a href="{%url 'news:government' %}">公务员</a></li>
+                                <li><a href="http://www.eastmoney.com">东方财富网</a></li>
+                                <li><a href="http://finance.sina.com.cn ">新浪财经</a></li>
+                                <li><a href="http://www.10jqka.com.cn">同花顺财经</a></li>
+                                <li><a href="http://finance.qq.com">腾讯财经</a></li>
+                                <li><a href="http://www.cnstock.com"> 中国证券网</a></li>
+                                <li><a href="http://business.sohu.com">搜狐财经</a></li>
+                         <!--        <li><a href="{%url 'news:government' %}">公务员</a></li>
                                 <li><a href="{%url 'news:MBA' %}">商学院</a></li>
                                 <li><a href="{%url 'news:international' %}">国际学校</a></li>
                                 <li><a href="{%url 'news:immigrant' %}">移民</a></li>
                                 <li><a href="{%url 'news:about' %}">最新</a></li>
-                                <li><a href="{%url 'news:hit' %}">最热</a></li>
+                                <li><a href="{%url 'news:hit' %}">最热</a></li> -->
                             </ul>
                         </div>
                     </div>
@@ -287,8 +287,8 @@
                     <div class="col-md-4 footer-widget">
                         <h3> <i class="fa fa-user"></i><a name="1">About</a></h3>
 
-                       <p>This is a site which can collote education news from other websites</p>
-                       <p>This is a site which can collote education news from other websites</p>
+                       <p>This is a Django project. It is a website for financial news. </p>
+                       <p>The spider framework uses scrapy.and database is mysql.The website is based on HTML+CSS+bootstrap+javascript.</p>
                     </div>
 
                     <div class="col-md-4 footer-widget">
@@ -303,8 +303,9 @@
                     <div class="col-md-4 footer-widget">
                         <h3> <i class="fa fa-envelope"></i><a href="">Contact Me</a></h3>
 
-                        <p>If you have any problem, you can contact me.</p>
-                        <p>You can send message to me!</p>
+                        <p>刘宏阳 117033910101</p>
+                        <p>李昶蔚 117033910100</p>
+                        <p>徐瑞聪 117033910038</p>
                          <div class="footer-widget-icon">
                             <i class="fa fa-wechat"></i><i class="fa fa-weibo"></i><i class="fa fa-qq"></i>
                         </div>
@@ -314,7 +315,7 @@
             </div>
         </div>
         <div class="widewrapper copyright">
-                Copyright 2017 . developed by liulu .
+                © 2018. Homework for Web Search and Mining.
         </div>
     </footer>
 
