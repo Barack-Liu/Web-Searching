@@ -21,6 +21,7 @@ More details are written in preprocess.py. Finally, content information and key 
 ```
 import jieba.posseg as pseg
 
+# chinese word segmentation
 result = []
 with open(filename,'r') as f:
     text = f.read()
@@ -48,3 +49,5 @@ for topic_idx, topic in enumerate(lda.components_):
 ```
 I set the related topics of each document as 3 and the final matrix of the whole data is stored in ./relation.txt.
 
+## Gensim
+Gensim is a robust open-source vector space modeling and topic modeling toolkit implemented in Python. It aims to handle text collections,using data streaming and efficient incremental algorithms.import gensim and create a small corpus of
