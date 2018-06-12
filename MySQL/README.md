@@ -16,11 +16,22 @@ Firstly, I preprocess the data. For all the documents in the dataset, I extract 
 ```
 '：' , '。' ， '？' ，'不仅'，'除非','关于'，'充分'，'迟早'，'处处'，'出去'，'成年'，'从未'，'传说'，'匆匆'......
 ```
-All the 'stop words' are list in the stop_words.txt. I will remove every word in stop_word.txt and keep the main content in the document.
+All the 'stop words' are list in the stop_words.txt. Using the 'jieba' module, I can get a better chinese word segmentation result for the document. And then I will remove every word in stop_word.txt and keep the main content in the document.
 More details are written in preprocess.py. Finally, content information and key words information are stored in ./train_txt/news/ and ./processed_txt/news/ respectively.
+```
+import jieba.posseg as pseg
 
-## LDA topic model
-LDA is a generative probabilistic model for collections of discrete data. It is a three-level hierarchical Bayesian model, in which each item of a collection is modeled as a finite mixture over an underlying set of topics. Each topic is modeled as an infinite mixture over an underlying set of a document. For example, if observations are words collected into documents, it posits that each document is a mixture of a small number of topics and that each word's creation is attributable to one of the document's topics. We can apply LDA topic model in learning the topic of each document and easily recommend some related news in the same topic. I realize the LDA topic model in tf.idf_recommend.py.
+result = []
+with open(filename,'r') as f:
+    text = f.read()
+    words = pseg.cut(text)
+for word, flag in words:
+    if flag not in stop_flag and word not in stop_words:
+        result.append(word)
+```
+
+## LDA model
+LDA is a generative probabilistic model for collections of discrete data. It is a three-level hierarchical Bayesian model, in which each item of a collection is modeled as a finite mixture over an underlying set of topics. Each topic is modeled as an infinite mixture over an underlying set of a document. For example, if observations are words collected into documents, it posits that each document is a mixture of a small number of topics and that each word's creation is attributable to one of the document's topics. We can apply LDA topic model in learning the topic of each document and label every news with several topics. I realize the LDA topic model in lda_topic.py.
 ```
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.decomposition import LatentDirichletAllocation
@@ -35,3 +46,5 @@ for topic_idx, topic in enumerate(lda.components_):
     str_topic_temp2 = str_topic_temp.split(' ')
     str_topic.append(str_topic_temp2[0])
 ```
+I set the related topics of each document as 3 and the final matrix of the whole data is stored in ./relation.txt.
+
