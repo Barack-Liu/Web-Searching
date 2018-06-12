@@ -19,6 +19,7 @@ Website Demo:<br>
 4.surf on http://localhost:3000/ to view website demo
 
 ## Update Record
+0612-LHY-Now the front-end read data from MongDB, we need XRC to modify it to read data from MySQL<br>
 0611-LHY-Website demo running<br>
 0611-LHY-Needs to connect to DB and develop searching function
 
