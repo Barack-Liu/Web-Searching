@@ -10,7 +10,7 @@ Website Demo:<br>
 4.surf on http://localhost:3000/ to view website demo
 
 ## Update Record
-0611-LHY-Website demo running
+0611-LHY-Website demo running<br>
 0611-LHY-Needs to connect to DB and develop searching function
 
 ## Project Description
