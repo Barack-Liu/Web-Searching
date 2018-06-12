@@ -32,9 +32,9 @@ Your data should be stored in plain text format. Each line should be a json of o
 ## Task Allocation
 | Name        |       Task  |
 | --------   |  :----: |
-| LCY       | Spider模块（使用Scrapy）及英文版Word项目文档；<br> Requirement0<br> R4<br>         |
-| LHY        | Website模块（使用Django）及英文版Word项目文档；<br>   R1<br> R2<br>          |
-| XRC        | Database模块（使用MySQL/MongoDB）及英文版Word项目文档；<br>  R3<br> R5<br>      |
+| LCY       | Spider Module<br> English Project Document(Word Version)<br> Requirement0<br> R4<br>         |
+| LHY        | Website Module<br>English Project Document(Word Version)<br>   R1<br> R2<br>          |
+| XRC        | Database Module<br>English Project Document(Word Version)<br>  R3<br> R5<br>      |
 
 
 
