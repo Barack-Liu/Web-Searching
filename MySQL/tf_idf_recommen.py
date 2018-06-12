@@ -3,10 +3,10 @@ import codecs
 from gensim import corpora, models, similarities
 import jieba
 import numpy as np
-num = 9225
+num = 25083
 def tokenization(filename):
     result = []
-    with open(filename, 'r') as f:
+    with open(filename, 'r',encoding='utf-8') as f:
         text = f.read()
         words = pseg.cut(text)
     for word, flag in words:

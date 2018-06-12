@@ -28,16 +28,27 @@ def tokenization(filename):
 	return result
 
 
-
 #read data from json
-with open('./data/test/easymoney.json','r') as f:
-	raw_data1 = json.load(f)
+
+with open('./data/test/eastmoney.json','r') as f:
+ 	raw_data1 = json.load(f)
+
 with open('./data/test/sina.json','r') as f:
 	raw_data2 = json.load(f)
+
 with open('./data/test/a10jqka.json','r') as f:
 	raw_data3 = json.load(f)
 
-raw_data = raw_data1 + raw_data2 + raw_data3
+with open('./data/test/cnstock.json','r') as f:
+	raw_data4 = json.load(f)
+
+with open('./data/test/sohu.json','r') as f:
+	raw_data5 = json.load(f)
+
+with open('./data/test/qq.json','r') as f:
+	raw_data6 = json.load(f)
+
+raw_data = raw_data1 + raw_data2 + raw_data3 + raw_data4 + raw_data5 + raw_data6
 
 #write raw data to txt
 num = len(raw_data)
@@ -47,7 +58,6 @@ for i in range(num):
 	content = raw_data[i]['content']
 	content = unicodedata.normalize('NFKD',content)
 	content = content[0:-40] #delete useless char at end
-	#content = content.replace(u"\u2022",u"")
 	#create path to save txt data from raw data
 	txt_path = './train_txt/news_' + str(i) + '.txt'
 	if not os.path.exists(os.path.split(txt_path)[0]):
