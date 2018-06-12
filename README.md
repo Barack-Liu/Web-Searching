@@ -32,9 +32,9 @@ Your data should be stored in plain text format. Each line should be a json of o
 ## Task Allocation
 | Name        |       Task  |
 | --------   |  :----: |
-| LCY       | Spider模块（使用Scrapy）及文档；<br>  For each website we give, you need to crawl all the news starting from year 2015 (including 2015) up to now;  <br> Your system should work in real-times；         |
-| LHY        | Website模块（使用Django）及文档；<br>   Support several search methods；<br>   Manually design or automatic generate proper categories and classify the crawled news into those categories；         |
-| XRC        | 数据库模块（使用MySQL）及文档；<br>   Website模块（使用Django）及文档；<br>   Support news recommendation；Allow users to track some topics；         |
+| LCY       | Spider模块（使用Scrapy）及英文版Word项目文档；<br> Requirement0<br> R4<br>         |
+| LHY        | Website模块（使用Django）及英文版Word项目文档；<br>   R1<br> R2<br>          |
+| XRC        | Database模块（使用MySQL/MongoDB）及英文版Word项目文档；<br>  R3<br> R5<br>      |
 
 
 
