@@ -1,9 +1,6 @@
-/**
- * Created by 泰佑 on 2017/5/18.
- */
-
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/newsSpider');
+/*mongoose.connect('mongodb://localhost:27017/newsSpider');*/
+mongoose.connect('mongodb://LHY:9713@localhost:27017/newsSpider');
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error: '));
 db.on('open', function () {
