@@ -50,4 +50,13 @@ for topic_idx, topic in enumerate(lda.components_):
 I set the related topics of each document as 3 and the final matrix of the whole data is stored in ./relation.txt.
 
 ## Gensim
-Gensim is a robust open-source vector space modeling and topic modeling toolkit implemented in Python. It aims to handle text collections,using data streaming and efficient incremental algorithms.import gensim and create a small corpus of
+Gensim is a robust open-source vector space modeling and topic modeling toolkit implemented in Python. It aims to handle text collections,using data streaming and efficient incremental algorithms. I import gensim and create a small corpus of the all document and Top-k related news. In gensim, a corpus is simply an object which, when iterated over, returns its documents represented as sparse vectors. Some details are as follows:
+```
+from gensim import corpora, models, similarities
+
+dictionary = corpora.Dictionary(corpus)
+doc_vectors = [dictionary.doc2bow(text) for text in corpus]
+tfidf = models.TfidfModel(doc_vectors)
+tfidf_vectors = tfidf[doc_vectors]
+```
+In this project, I choose Top-6 similar news in the similarity matrix followed by a related topic for each document.
