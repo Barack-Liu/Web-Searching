@@ -1,5 +1,14 @@
 # Web-Searching
 
+## Environment
+python 3.x<br>
+MongoDB (db version 3.x)<br>
+&nbsp;  username: LHY<br>
+&nbsp;  password: 9713<br>
+NodeJs 10.x<br>
+bootstrap<br>
+koa2<br>
+
 ## 	Execution
 run spider: cd finance_spider/ && ./start.sh
 
