@@ -19,5 +19,17 @@ Firstly, I preprocess the data. For all the documents in the dataset, I extract 
 All the 'stop words' are list in the stop_words.txt. I will remove every word in stop_word.txt and keep the main content in the document.
 More details are written in preprocess.py. Finally, content information and key words information are stored in ./train_txt/news/ and ./processed_txt/news/ respectively.
 
-# LDA topic model
-LDA is a generative probabilistic model for collections of discrete data. It is a three-level hierarchical Bayesian model, in which each item of a collection is modeled as a finite mixture over an underlying set of topics. Each topic is modeled as an infinite mixture over an underlying set of a document. For example, if observations are words collected into documents, it posits that each document is a mixture of a small number of topics and that each word's creation is attributable to one of the document's topics. We can apply LDA topic model in learning the topic of each document and easily recommend some related news in the same topic. I realize the LDA topic model in tf.idf_recommend.py
+## LDA topic model
+LDA is a generative probabilistic model for collections of discrete data. It is a three-level hierarchical Bayesian model, in which each item of a collection is modeled as a finite mixture over an underlying set of topics. Each topic is modeled as an infinite mixture over an underlying set of a document. For example, if observations are words collected into documents, it posits that each document is a mixture of a small number of topics and that each word's creation is attributable to one of the document's topics. We can apply LDA topic model in learning the topic of each document and easily recommend some related news in the same topic. I realize the LDA topic model in tf.idf_recommend.py.
+```
+#train lda
+lda = LatentDirichletAllocation(n_topics=500, learning_offset=50., random_state=0)
+docres = lda.fit_transform(cntTf)
+
+tf_feature_names = cntVector.get_feature_names()
+str_topic = []
+for topic_idx, topic in enumerate(lda.components_):   
+    str_topic_temp = " ".join([tf_feature_names[i] for i in topic.argsort()[:-10 - 1:-1]])
+    str_topic_temp2 = str_topic_temp.split(' ')
+    str_topic.append(str_topic_temp2[0])
+```
