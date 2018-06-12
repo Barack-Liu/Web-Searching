@@ -9,9 +9,8 @@ Website Demo:<br>
 3.cd NewsAggregationWebsiteKoa2 && npm start <br>
 4.surf on http://localhost:3000/ to view website demo
 
-# Update Record
+## Update Record
 0611-LHY-Website demo running
-
 0611-LHY-Needs to connect to DB and develop searching function
 
 ## Project Description
@@ -21,7 +20,7 @@ In this project, you are asked to build a simple financial news website. All you
 Your data should be stored in plain text format. Each line should be a json of one document. For each document json should be like, doc= {“content”: “xxx”, “source”: “xxx”, “time”: “xxx”, “title”: “xxx”, “url”: “xxx”}.
 
 
-## Requirements
+## Project requirements
 0. (Basic) For each website we give, you need to crawl all the news starting from year 2015 (including 2015) up to now.
 1. (about 30% scores) Support several search methods. Firstly, user can just input some keywords, you need to search these keywords in the whole database and return a list of news. Secondly, user can choose search in the title or search in everywhere. Thirdly, users can limit which year of news they want when doing search. 
 2. (about 20% scores) Manually design or automatic generate proper categories and classify the crawled news into those categories. 
@@ -29,7 +28,7 @@ Your data should be stored in plain text format. Each line should be a json of o
 4. (about 20% scores) Your system should work in real-times. This means when one of the above websites publish new articles, you can catch them into your system with little delay. 
 5. (Bonus) Allow users to track some topics. When your system finds some latest articles, which are related to one of these topics, you need to generate a new web page which arranges these related articles in a good manner. Then you need to send this generated web page to user’s email. 
 
-## Task Allocation
+## Task allocation
 | Name        |       Task  |
 | --------   |  :----: |
 | LCY       | Spider Module<br> English Project Document(Word Version)<br> Requirement0<br> R4<br>         |
