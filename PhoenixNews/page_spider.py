@@ -3,7 +3,7 @@
 # import urllib2
 from urllib import request
 from bs4 import BeautifulSoup
-
+import mongodb_driver
 
 class PageSpider(object):
     def __init__(self, page_url):
