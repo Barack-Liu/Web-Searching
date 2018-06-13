@@ -61,12 +61,13 @@ tfidf_vectors = tfidf[doc_vectors]
 ```
 In this project, I choose Top-5 similar news in the similarity matrix followed by a related topic for each document. Every line in the similarity matrix is described as
 ```
-news_id
-similar_1
-similar_2
-similar_3
-similar_4
-similar_5
-relate_topic
-content
+news_id\
+similar_1\
+similar_2\
+similar_3\
+similar_4\
+similar_5\
+relate_topic\
+content 
 ```
+And the results stored in ./similarity_txt and then are uploaded to our MySQL database. 
