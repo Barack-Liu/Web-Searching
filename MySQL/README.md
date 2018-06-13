@@ -59,4 +59,14 @@ doc_vectors = [dictionary.doc2bow(text) for text in corpus]
 tfidf = models.TfidfModel(doc_vectors)
 tfidf_vectors = tfidf[doc_vectors]
 ```
-In this project, I choose Top-6 similar news in the similarity matrix followed by a related topic for each document.
+In this project, I choose Top-5 similar news in the similarity matrix followed by a related topic for each document. Every line in the similarity matrix is described as
+```
+news_id
+similar_1
+similar_2
+similar_3
+similar_4
+similar_5
+relate_topic
+content
+```
