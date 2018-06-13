@@ -1,24 +1,31 @@
 # Web-Searching
 
 ## Environment
+Ubuntu 16.x
 python 3.x<br>
 MongoDB (db version 3.x)<br>
-&nbsp;  username: LHY<br>
-&nbsp;  password: 9713<br>
 NodeJs 10.x<br>
 bootstrap<br>
 koa2<br>
 
 ## 	Execution
-run spider: cd finance_spider/ && ./start.sh
+### run spider
+cd finance_spider/ && ./start.sh
 
-Website Demo:<br> 
-1.cd NewsAggregationWebsiteKoa2 && npm install <br>
-2.cd PhoenixNews && python3 main.py <br>
-3.cd NewsAggregationWebsiteKoa2 && npm start <br>
-4.surf on http://localhost:3000/ to view website demo
+### Website Demo
+1.cd NewsAggregationWebsiteKoa2 && npm install &nbsp;&nbsp; This process is to the neccessary modules<br>
+2.cd PhoenixNews && python3 main.py  &nbsp;&nbsp; This process is to craw the news by the newsSpider and save them into the mongoDB database<br>
+3.cd NewsAggregationWebsiteKoa2 && npm start  &nbsp;&nbsp; This process is to start the local server<br>
+4.surf on http://localhost:3000/ to view website demo &nbsp;&nbsp; Now the website demo should function well<br>
+
+### Demo User Account 
+I register an account and the recommendation system will reccomend some news for me according to my likes and browser history.<br>
+&nbsp;&nbsp; username: LHY<br>
+&nbsp;&nbsp; password: 9713<br>
+
 
 ## Update Record
+0613-LHY-Requirement0,R2,R3,R4 and R5 are finished. The remaining task is to achive R1 and change database from MySQL to MongoDB<br>
 0612-LHY-Now the front-end read data from MongDB, we need XRC to modify it to read data from MySQL<br>
 0611-LHY-Website demo running<br>
 0611-LHY-Needs to connect to DB and develop searching function
