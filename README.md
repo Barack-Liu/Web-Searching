@@ -25,6 +25,7 @@ I register an account and the recommendation system will reccomend some news for
 
 
 ## Update Record
+0614-LHY-When I crawl some new data today, the demo website still present the news crawed yesterday. I suspect that this issue may be caused by the reason that the newsSpider builts a new MongoDB database but the website still query for the old one. I will try to fix it.<br>
 0613-LHY-Requirement0,R2,R3,R4 and R5 are finished. The remaining task is to achive R1 and change database from MySQL to MongoDB<br>
 0612-LHY-Now the front-end read data from MongDB, we need XRC to modify it to read data from MySQL<br>
 0611-LHY-Website demo running<br>
