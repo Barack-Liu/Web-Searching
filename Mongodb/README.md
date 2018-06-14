@@ -81,6 +81,7 @@ A record in MongoDB is a document, which is a data structure composed of field a
      status: "A"
      groups: ["news","sports"]
  }
+ 
 ```
  The advantages of using documents are:\
  * Document correspond to native data types in many programming languages.\
