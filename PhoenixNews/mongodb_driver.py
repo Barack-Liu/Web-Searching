@@ -1,12 +1,8 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 import pymongo
-
 
 class ConnectDatabase(object):
     def __init__(self):
-        # connection = pymongo.MongoClient('127.0.0.1', 27017)
-        connection = pymongo.MongoClient('mongodb://LHY:9713@localhost:27017/')
+        connection = pymongo.MongoClient('127.0.0.1', 27017)
         self.db = connection.newsSpider
         self.news = self.db.news
 

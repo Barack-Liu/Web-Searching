@@ -1,11 +1,12 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
 import theme_spider
 import page_spider
 import mongodb_driver
-# from PhoenixNews import theme_spider
-# from PhoenixNews import page_spider
-# from PhoenixNews import mongodb_driver
+
+#from PhoenixNews import theme_spider
+#from PhoenixNews import page_spider
+#from PhoenixNews import mongodb_driver
 
 theme_url_list = [
     {'name':'即时',   'href':"http://news.ifeng.com/listpage/11502/0/1/rtlist.shtml",'judge':"http://news.ifeng.com/a/\d+"},#18

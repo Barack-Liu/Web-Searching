@@ -1,10 +1,7 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# from urllib2 import reques
 from urllib import request
 from bs4 import BeautifulSoup
 import re
-import mongodb_driver
+
 
 class ThemeSpider(object):
     def __init__(self, theme_url,judge_url):
