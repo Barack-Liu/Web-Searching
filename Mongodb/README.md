@@ -1,4 +1,4 @@
-# MySQL Database
+# Mongodb Database
 In this section, I'll build databases for the project and provide an introduction in details. Relational database management system (RDBMS) 
 is to store and manage large anounts of data, which is based on the relational model, and the data in
 the database are processed with the help of mathematical concepts and methods such as set algebra.
@@ -70,4 +70,19 @@ similar_5\
 relate_topic\
 content 
 ```
-And the results stored in ./similarity_txt and then are uploaded to our MySQL database. 
+And the results stored in ./similarity_txt and then are uploaded to our Mongodb database. 
+## Mongodb Startup
+Mongodb is an open-source document database that provides high performance, high availability, and automatic scaling.
+A record in MongoDB is a document, which is a data structure composed of field and value pairs. MongoDB documents are similar to JSON objects. The values of fields may include other documents, arrays of document. An example is as follows:
+```
+{
+     name: "sue",
+     age: 26,
+     status: "A"
+     groups: ["news","sports"]
+ }
+ '''
+ The advantages of using documents are:
+ Document correspond to native data types in many programming languages.
+ Embedded documents and arrays reduce need for expensive joins.
+ Dynamic schema supports fluent polymorphism.
