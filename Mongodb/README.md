@@ -71,7 +71,7 @@ relate_topic\
 content 
 ```
 And the results stored in ./similarity_txt and then are uploaded to our Mongodb database. 
-## Mongodb Startup
+## Mongodb 
 Mongodb is an open-source document database that provides high performance, high availability, and automatic scaling.
 A record in MongoDB is a document, which is a data structure composed of field and value pairs. MongoDB documents are similar to JSON objects. The values of fields may include other documents, arrays of document. An example is as follows:
 ```
@@ -93,4 +93,10 @@ A record in MongoDB is a document, which is a data structure composed of field a
  * High Availability
  * Horizontal Scalability
  * Support for Multiple Storage Engines
- 
+ ##3 Start up
+ After installing mongodb, we need to connect our "test" dataset as:
+ ```
+ > ./mongo
+ > show dbs
+ > use test
+ ```
