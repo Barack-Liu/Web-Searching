@@ -20,15 +20,14 @@ cd finance_spider/ && ./start.sh
 
 
 ## Homepage categories
-财经
-全球
+期货
+国际
 A股
-新股
 港股
 美股
 新三板
 商业
-期货
+财经
 外汇
 黄金
 债券
@@ -37,7 +36,8 @@ A股
 信托
 基金
 理财
-公司<br>
+公司
+新股<br>
 All the financial news is roughly divided into 18 categories and they will display on the homepage.<br>
 
 ## Update Record
