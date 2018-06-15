@@ -37,6 +37,7 @@ A record in MongoDB is a document, which is a data structure composed of field a
 ```
 ./mongo
 >mongodb://username:password@hostname/dbname/
+```
 ## Data preprocess
 Our data are from six Chinese financial websites, which stored in ../finance_spider folder. And each line is a json of one document as:
 
@@ -50,6 +51,7 @@ Firstly, I preprocess the data. For all the documents in the dataset, I extract 
 ```
 All the 'stop words' are list in the stop_words.txt. Using the 'jieba' module, I can get a better Chinese word segmentation result for the document. And then I will remove every word in stop_word.txt and keep the main content in the document.
 More details are written in preprocess.py. Finally, content information and key words information are stored in ./train_txt/news/ and ./processed_txt/news/ respectively.
+
 ```
 import jieba.posseg as pseg
 
