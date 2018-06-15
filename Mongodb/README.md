@@ -1,27 +1,27 @@
 # Mongodb Database
 In this section, I'll build databases for the project and provide an introduction in details. Relational database management system (RDBMS) 
-is to store and manage large anounts of data, which is based on the relational model, and the data in
+is to store and manage large accounts of data, which is based on the relational model, and the data in
 the database are processed with the help of mathematical concepts and methods such as set algebra.
-Djangp attempts to support as many features as possible on all database backends. MySQL is a RDBMS and
-Django provides the unified API for MySQL. In our project, I choose Mysql for web application. And some details are as follows.
+Node.js attempts to support as many features as possible on all database backends. MongoDB is a RDBMS and
+Node.js provides the unified API for MongoDB. In our project, I choose MongoDB for web application. And some details are as follows.
 
 ## Data preprocess
-Our data are from six chinese financial websites, which stored in ../finance_spider folder. And each line is a json of one document as:
+Our data are from six Chinese financial websites, which stored in ../finance_spider folder. And each line is a json of one document as:
 
 ```
 doc = {"content":"xxx","source": "xxx", "time": "xxx", "title": "xxx", "url": "xxx"}
 ```
-To get the correlation matrix of data in MySQL, I use three .py files to achieve the goal. 
+To get the correlation matrix of data in MongoDB, I use three .py files to achieve the goal. 
 Firstly, I preprocess the data. For all the documents in the dataset, I extract the 'content' from the doc and only analyze the key words excluding 'stop words', such as symbols,preposition,noun and so on, shown as follows:
 ```
 '：' , '。' ， '？' ，'不仅'，'除非','关于'，'充分'，'迟早'，'处处'，'出去'，'成年'，'从未'，'传说'，'匆匆'......
 ```
-All the 'stop words' are list in the stop_words.txt. Using the 'jieba' module, I can get a better chinese word segmentation result for the document. And then I will remove every word in stop_word.txt and keep the main content in the document.
+All the 'stop words' are list in the stop_words.txt. Using the 'jieba' module, I can get a better Chinese word segmentation result for the document. And then I will remove every word in stop_word.txt and keep the main content in the document.
 More details are written in preprocess.py. Finally, content information and key words information are stored in ./train_txt/news/ and ./processed_txt/news/ respectively.
 ```
 import jieba.posseg as pseg
 
-# chinese word segmentation
+# Chinese word segmentation
 result = []
 with open(filename,'r') as f:
     text = f.read()
