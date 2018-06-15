@@ -96,6 +96,8 @@ tfidf_vectors = tfidf[doc_vectors]
 In this project, I choose Top-5 similar news in the similarity matrix followed by a related topic for each document. Every line in the similarity matrix is described as
 ```
 news_id\
+title\
+url\
 similar_1\
 similar_2\
 similar_3\
