@@ -4,7 +4,39 @@ is to store and manage large accounts of data, which is based on the relational 
 the database are processed with the help of mathematical concepts and methods such as set algebra.
 Node.js attempts to support as many features as possible on all database backends. MongoDB is a RDBMS and
 Node.js provides the unified API for MongoDB. In our project, I choose MongoDB for web application. And some details are as follows.
-
+## Mongodb 
+Mongodb is an open-source document database that provides high performance, high availability, and automatic scaling.
+A record in MongoDB is a document, which is a data structure composed of field and value pairs. MongoDB documents are similar to JSON objects. The values of fields may include other documents, arrays of document. An example is as follows:
+```
+{
+     name: "sue",
+     age: 26,
+     status: "A"
+     groups: ["news","sports"]
+ }
+ 
+```
+ ### The advantages of using documents are: 
+ * Document correspond to native data types in many programming languages.
+ * Embedded documents and arrays reduce need for expensive joins.
+ * Dynamic schema supports fluent polymorphism.
+ ### Key Feature:
+ * High Performance
+ * Rich Query Language
+ * High Availability
+ * Horizontal Scalability
+ * Support for Multiple Storage Engines
+ ### Start up
+ After installing mongodb, we need to connect our "test" dataset as:
+ ```
+ > ./mongo
+ > show dbs
+ > use test
+ ```
+### Connection Command
+```
+./mongo
+>mongodb://username:password@hostname/dbname/
 ## Data preprocess
 Our data are from six Chinese financial websites, which stored in ../finance_spider folder. And each line is a json of one document as:
 
@@ -71,36 +103,4 @@ relate_topic\
 content 
 ```
 And the results stored in ./similarity_txt and then are uploaded to our Mongodb database. 
-## Mongodb 
-Mongodb is an open-source document database that provides high performance, high availability, and automatic scaling.
-A record in MongoDB is a document, which is a data structure composed of field and value pairs. MongoDB documents are similar to JSON objects. The values of fields may include other documents, arrays of document. An example is as follows:
-```
-{
-     name: "sue",
-     age: 26,
-     status: "A"
-     groups: ["news","sports"]
- }
- 
-```
- ### The advantages of using documents are: 
- * Document correspond to native data types in many programming languages.
- * Embedded documents and arrays reduce need for expensive joins.
- * Dynamic schema supports fluent polymorphism.
- ### Key Feature:
- * High Performance
- * Rich Query Language
- * High Availability
- * Horizontal Scalability
- * Support for Multiple Storage Engines
- ### Start up
- After installing mongodb, we need to connect our "test" dataset as:
- ```
- > ./mongo
- > show dbs
- > use test
- ```
-### Connection Command
-```
-./mongo
->mongodb://username:password@hostname/dbname/
+
