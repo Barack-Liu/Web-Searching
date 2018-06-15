@@ -39,6 +39,14 @@ A股
 公司
 新股<br>
 All the financial news is roughly divided into 18 categories and they will display on the homepage.<br>
+When the spider crawls the news, it will divide the news into different categories.See Web-Searching\Front-End Image\F12.png<br>
+
+## Database Structure
+The name of the database: newsSpider. See Web-Searching\Front-End Image\F10.png<br>
+There are two tables in the database:news and users.See Web-Searching\Front-End Image\F11.png<br>
+The structure of table "news".See Web-Searching\Front-End Image\F9.png<br>
+The structure of table "users".See Web-Searching\Front-End Image\F8.png<br>
+
 
 ## Update Record
 0615-LHY-I have finished the front-end Project Report. XRC has finished the MongoDB database and I need to connect the back-end with the database.<br>
