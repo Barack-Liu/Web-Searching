@@ -106,5 +106,5 @@ similar_5\
 relate_topic\
 content 
 ```
-And the results stored in ./similarity_txt and then are uploaded to our Mongodb database. 
+And the results are stored as similarity.csv and then are uploaded to our Mongodb database.
 
