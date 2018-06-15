@@ -49,6 +49,7 @@ The structure of table "users".See Web-Searching\Front-End Image\F8.png<br>
 
 
 ## Update Record
+0616-LHY-I need to integrate the three parts of project Report. And then I need to connect the front-end with the data that the back-end provide.<br>
 0615-LHY-I have finished the front-end Project Report. XRC has finished the MongoDB database and I need to connect the back-end with the database.<br>
 0614-LHY-When I crawl some new data today, the demo website still present the news crawed yesterday. I suspect that this issue may be caused by the reason that the newsSpider builts a new MongoDB database but the website still query for the old one. I will try to fix it.<br>
 0613-LHY-Requirement0,R2,R3,R4 and R5 are finished. The remaining task is to achive R1 and change database from MySQL to MongoDB<br>
