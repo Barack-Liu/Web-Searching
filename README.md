@@ -19,7 +19,26 @@ cd finance_spider/ && ./start.sh
 4.surf on http://localhost:3000/ to view website demo &nbsp;&nbsp; Now the website demo should function well<br>
 
 
-
+## Homepage categories
+财经
+全球
+A股
+新股
+港股
+美股
+新三板
+商业
+期货
+外汇
+黄金
+债券
+银行
+保险
+信托
+基金
+理财
+公司<br>
+All the financial news is roughly divided into 18 categories and they will display on the homepage.<br>
 
 ## Update Record
 0615-LHY-I have finished the front-end Project Report. XRC has finished the MongoDB database and I need to connect the back-end with the database.<br>
