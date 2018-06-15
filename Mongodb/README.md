@@ -93,10 +93,14 @@ A record in MongoDB is a document, which is a data structure composed of field a
  * High Availability
  * Horizontal Scalability
  * Support for Multiple Storage Engines
- ##3 Start up
+ ### Start up
  After installing mongodb, we need to connect our "test" dataset as:
  ```
  > ./mongo
  > show dbs
  > use test
  ```
+### Connection Command
+```
+./mongo
+>mongodb://username:password@hostname/dbname/
