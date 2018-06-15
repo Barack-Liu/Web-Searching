@@ -23,7 +23,9 @@ class QqSpider(CrawlSpider):
         item = FinanceItem()
         item['content'] = ''.join(response.xpath('//div[@class="Cnt-Main-Article-QQ"]/p/text()').extract())
         item['source']  = 'qq'
-        item['time']    = response.xpath('//div[@class="a_Info"]/span[@class="a_time"]/text()').extract()[0]
+        item['datetime']    = response.xpath('//div[@class="a_Info"]/span[@class="a_time"]/text()').extract()[0]
         item['title']   = response.xpath("/html/head/title/text()").extract()[0]
-        item['url']     = response.url
+        item['href']     = response.url
+        item['type']   = u'\u5373\u65f6'
+
         return item

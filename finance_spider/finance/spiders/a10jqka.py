@@ -24,8 +24,9 @@ class A10jqkaSpider(CrawlSpider):
         item = FinanceItem()
         item['content'] = ''.join(response.xpath('//p/text()').extract())
         item['source']  = '10jqka'
-        item['time']    = response.xpath('//div[@class="date"]/span/text()').extract()[0][:19]
+        item['datetime']    = response.xpath('//div[@class="date"]/span/text()').extract()[0][:19]
         item['title']   = response.xpath("/html/head/title/text()").extract()[0]
-        item['url']     = response.url
+        item['href']    = response.url
+        item['type']    = u'\u5373\u65f6'
 
         yield item

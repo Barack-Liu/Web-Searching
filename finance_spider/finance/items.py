@@ -11,8 +11,9 @@ import scrapy
 class FinanceItem(scrapy.Item):
     content = scrapy.Field()
     source = scrapy.Field()
-    time = scrapy.Field()
+    datetime = scrapy.Field()
     title = scrapy.Field()
-    url = scrapy.Field()
+    href = scrapy.Field()
+    type = scrapy.Field()
     
     pass

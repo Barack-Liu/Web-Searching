@@ -22,8 +22,9 @@ class CnstockSpider(CrawlSpider):
         item = FinanceItem()
         item['content'] = ''.join(response.xpath('//div[@class="content"]/p/text()').extract())
         item['source']  = 'cnstock'
-        item['time']    = response.xpath('//div[@class="bullet"]/span[@class="timer"]/text()').extract()[0]
+        item['datetime']    = response.xpath('//div[@class="bullet"]/span[@class="timer"]/text()').extract()[0]
         item['title']   = response.xpath("/html/head/title/text()").extract()[0]
-        item['url']     = response.url
+        item['href']    = response.url
+        item['type']    = u'\u5373\u65f6'
 
         yield item

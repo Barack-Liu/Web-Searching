@@ -27,9 +27,10 @@ class EastmoneySpider(CrawlSpider):
         item = FinanceItem()
         item['content']	= ''.join(response.xpath('//div[@class="Body"]/p/text()').extract())
         item['source'] = 'eastmoney'
-        item['time'] = response.xpath('//div[@class="time"]/text()').extract()[0]
+        item['datetime'] = response.xpath('//div[@class="time"]/text()').extract()[0]
         item['title'] = response.xpath('//div[@class="newsContent"]/h1/text()').extract()[0]
-        item['url'] = response.url
+        item['href'] = response.url
+        item['type'] = u'\u5373\u65f6'
  
         yield item
         #yield Request(response.url)
