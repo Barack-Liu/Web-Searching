@@ -1,7 +1,3 @@
-/**
- * Created by 泰佑 on 2017/5/18.
- */
-
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/newsSpider');
 const db = mongoose.connection;

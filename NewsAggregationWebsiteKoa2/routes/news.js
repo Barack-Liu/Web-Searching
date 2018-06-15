@@ -1,7 +1,3 @@
-/**
- * Created by 泰佑 on 2017/5/18.
- */
-
 const router = require('koa-router')();
 const db = require('./database');
 
