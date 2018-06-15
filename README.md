@@ -18,10 +18,7 @@ cd finance_spider/ && ./start.sh
 3.cd NewsAggregationWebsiteKoa2 && npm start  &nbsp;&nbsp; This process is to start the local server<br>
 4.surf on http://localhost:3000/ to view website demo &nbsp;&nbsp; Now the website demo should function well<br>
 
-### Demo User Account 
-I register an account and the recommendation system will reccomend some news for me according to my likes and browser history.<br>
-&nbsp;&nbsp; username: LHY<br>
-&nbsp;&nbsp; password: 9713<br>
+
 
 
 ## Update Record
