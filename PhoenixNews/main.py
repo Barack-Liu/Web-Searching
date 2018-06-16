@@ -10,12 +10,12 @@ import mongodb_driver
 
 theme_url_list = [
     {'name':'即时',   'href':"http://news.ifeng.com/listpage/11502/0/1/rtlist.shtml",'judge':"http://news.ifeng.com/a/\d+"},#18
-    {'name':'期货',   'href':"http://news.ifeng.com/mainland/",           'judge':"http://news.ifeng.com/a/\d+" },#0
-    {'name':'国际',   'href':"http://news.ifeng.com/world/",              'judge':"http://news.ifeng.com/a/\d+"},#1
-    {'name':'Ａ股',   'href':"http://news.ifeng.com/taiwan/",             'judge':"http://news.ifeng.com/a/\d+"},#2
-    {'name':'港股',   'href':"http://news.ifeng.com/society/",            'judge':"http://news.ifeng.com/a/\d+"},#3
-    {'name':'美股',   'href':"http://news.ifeng.com/mil/index.shtml",     'judge':"http://news.ifeng.com/a/\d+"},#4
-    {'name':'新三板',   'href':"http://news.ifeng.com/hongkong/index.shtml",'judge':"http://news.ifeng.com/a/\d+"},#5
+    {'name':'新浪财经',   'href':"http://news.ifeng.com/mainland/",           'judge':"http://news.ifeng.com/a/\d+" },#0
+    {'name':'同花顺财经',   'href':"http://news.ifeng.com/world/",              'judge':"http://news.ifeng.com/a/\d+"},#1
+    {'name':'腾讯财经',   'href':"http://news.ifeng.com/taiwan/",             'judge':"http://news.ifeng.com/a/\d+"},#2
+    {'name':'中国证券网 ',   'href':"http://news.ifeng.com/society/",            'judge':"http://news.ifeng.com/a/\d+"},#3
+    {'name':'搜狐财经',   'href':"http://news.ifeng.com/mil/index.shtml",     'judge':"http://news.ifeng.com/a/\d+"},#4
+    {'name':'东方财富网',   'href':"http://news.ifeng.com/hongkong/index.shtml",'judge':"http://news.ifeng.com/a/\d+"},#5
     {'name':'商业',   'href':"http://news.ifeng.com/history/",            'judge':"http://news.ifeng.com/a/\d+"},#6
     {'name':'财经',   'href':'http://finance.ifeng.com/',                 'judge':"http://finance.ifeng.com/a/"},#7
     {'name':'外汇',   'href':'http://ent.ifeng.com/',                     'judge':"http://ent.ifeng.com/a/"},#8
