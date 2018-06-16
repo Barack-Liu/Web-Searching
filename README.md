@@ -16,12 +16,13 @@ koa2<br>
 
 
 ## Homepage categories
-东方财富网  <br>  
+
 新浪财经  <br> 
 同花顺财经  <br> 
 腾讯财经  <br> 
 中国证券网  <br> 
-搜狐财经 <br>  
+搜狐财经 <br>
+东方财富网<br>
 All the financial news is roughly divided into 6 categories and they will display on the homepage.<br>
 When the spider crawls the news, it will divide the news into different categories.See Web-Searching\Front-End Image\F12.png<br>
 
