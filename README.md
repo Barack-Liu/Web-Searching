@@ -72,6 +72,13 @@ Your data should be stored in plain text format. Each line should be a json of o
 4. (about 20% scores) Your system should work in real-times. This means when one of the above websites publish new articles, you can catch them into your system with little delay. 
 5. (Bonus) Allow users to track some topics. When your system finds some latest articles, which are related to one of these topics, you need to generate a new web page which arranges these related articles in a good manner. Then you need to send this generated web page to user’s email. 
 
+## Deliverables
+The final deliverables should include the following items:<br>
+⚫ A well-written report to describe your ideas, design, implementation, example queries and results (with screenshots), conclusion, etc.<br>
+⚫ A web demo deployed on any publicly accessible web server (in case you can’t find an accessible machine to host your code and data, you can deploy the server on your local computer and contact Yangyang or Jessie for a personal demo in her office, before the due date).
+⚫ Source code of the whole search system.<br>
+⚫ Zipped archive of the entire crawled data.<br>
+
 ## Task allocation
 | Name        |       Task  |
 | --------   |  :----: |
