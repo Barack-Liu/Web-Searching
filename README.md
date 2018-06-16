@@ -17,7 +17,7 @@ koa2<br>
 
 ## Homepage categories
 
-新浪财经-sina  <br> 
+sina-sina  <br> 
 同花顺财经-a10jqka  <br> 
 腾讯财经-qq  <br> 
 中国证券网-cnstock  <br> 
@@ -76,7 +76,7 @@ The final deliverables should include the following items:<br>
 http://www.eastmoney.com  
 东方财富网  <br> 
 http://finance.sina.com.cn   
-新浪财经  <br> 
+sina  <br> 
 http://www.10jqka.com.cn  
 同花顺财经  <br> 
 http://finance.qq.com  
