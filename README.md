@@ -17,12 +17,12 @@ koa2<br>
 
 ## Homepage categories
 
-新浪财经  <br> 
-同花顺财经  <br> 
-腾讯财经  <br> 
-中国证券网  <br> 
-搜狐财经 <br>
-东方财富网<br>
+新浪财经-sina  <br> 
+同花顺财经-a10jqka  <br> 
+腾讯财经-qq  <br> 
+中国证券网-cnstock  <br> 
+搜狐财经-sohu <br>
+东方财富网-eastmoney<br>
 All the financial news is roughly divided into 6 categories according to the source website of the news.<br>
 
 
