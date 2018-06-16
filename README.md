@@ -9,36 +9,20 @@ bootstrap<br>
 koa2<br>
 
 ## 	Execution
-### run spider
-cd finance_spider/ && ./start.sh
-
-### Website Demo
 1.cd NewsAggregationWebsiteKoa2 && npm install &nbsp;&nbsp; This process is to the neccessary modules<br>
-2.cd PhoenixNews && python3 main.py  &nbsp;&nbsp; This process is to craw the news by the newsSpider and save them into the mongoDB database<br>
+2.cd finance_spider/ && ./start.sh  &nbsp;&nbsp; This process is to craw the news by the newsSpider and save them into the mongoDB database<br>
 3.cd NewsAggregationWebsiteKoa2 && npm start  &nbsp;&nbsp; This process is to start the local server<br>
 4.surf on http://localhost:3000/ to view website demo &nbsp;&nbsp; Now the website demo should function well<br>
 
 
 ## Homepage categories
-期货
-国际
-A股
-港股
-美股
-新三板
-商业
-财经
-外汇
-黄金
-债券
-银行
-保险
-信托
-基金
-理财
-公司
-新股<br>
-All the financial news is roughly divided into 18 categories and they will display on the homepage.<br>
+东方财富网  <br>  
+新浪财经  <br> 
+同花顺财经  <br> 
+腾讯财经  <br> 
+中国证券网  <br> 
+搜狐财经 <br>  
+All the financial news is roughly divided into 6 categories and they will display on the homepage.<br>
 When the spider crawls the news, it will divide the news into different categories.See Web-Searching\Front-End Image\F12.png<br>
 
 ## Database Structure
