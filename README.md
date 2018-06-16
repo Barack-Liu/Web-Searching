@@ -9,10 +9,10 @@ bootstrap<br>
 koa2<br>
 
 ## 	Execution
-1.cd NewsAggregationWebsiteKoa2 && npm install &nbsp;&nbsp; This process is to the neccessary modules<br>
-2.cd finance_spider/ && ./start.sh  &nbsp;&nbsp; This process is to craw the news by the newsSpider and save them into the mongoDB database<br>
-3.cd NewsAggregationWebsiteKoa2 && npm start  &nbsp;&nbsp; This process is to start the local server<br>
-4.surf on http://localhost:3000/ to view website demo &nbsp;&nbsp; Now the website demo should function well<br>
+1.cd NewsAggregationWebsiteKoa2 && npm install &nbsp;&nbsp; This process is to install the neccessary modules. It's only needed at the first execution.<br>
+2.cd finance_spider/ && ./start.sh  &nbsp;&nbsp; This process is to craw the news. The news data will be save into a collection "news" in the mongoDB database "newsSpider". When users log in, another collection "users" will be created in the database "newsSpider".<br>
+3.cd NewsAggregationWebsiteKoa2 && npm start  &nbsp;&nbsp; This process is to start the local server.<br>
+4.surf on http://localhost:3000/ to view website demo &nbsp;&nbsp; Now the website demo should function well.<br>
 
 
 ## Homepage categories
