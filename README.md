@@ -3,7 +3,7 @@
 ## Environment
 Ubuntu 16.x<br>
 python 3.x<br>
-MongoDB (db version 3.x)<br>
+MongoDB (db version 2.6.x)<br>
 NodeJs 10.x<br>
 bootstrap<br>
 koa2<br>
@@ -23,8 +23,8 @@ koa2<br>
 中国证券网  <br> 
 搜狐财经 <br>
 东方财富网<br>
-All the financial news is roughly divided into 6 categories and they will display on the homepage.<br>
-When the spider crawls the news, it will divide the news into different categories.See Web-Searching\Front-End Image\F12.png<br>
+All the financial news is roughly divided into 6 categories according to the source website of the news.<br>
+
 
 ## Database Structure
 The name of the database: newsSpider. See Web-Searching\Front-End Image\F10.png<br>
