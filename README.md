@@ -75,7 +75,7 @@ Your data should be stored in plain text format. Each line should be a json of o
 ## Deliverables
 The final deliverables should include the following items:<br>
 ⚫ A well-written report to describe your ideas, design, implementation, example queries and results (with screenshots), conclusion, etc.<br>
-⚫ A web demo deployed on any publicly accessible web server (in case you can’t find an accessible machine to host your code and data, you can deploy the server on your local computer and contact Yangyang or Jessie for a personal demo in her office, before the due date).
+⚫ A web demo deployed on any publicly accessible web server (in case you can’t find an accessible machine to host your code and data, you can deploy the server on your local computer and contact Yangyang or Jessie for a personal demo in her office, before the due date).<br>
 ⚫ Source code of the whole search system.<br>
 ⚫ Zipped archive of the entire crawled data.<br>
 
