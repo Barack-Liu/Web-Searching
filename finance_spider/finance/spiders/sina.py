@@ -19,11 +19,15 @@ class BangbingSpider(CrawlSpider):
 
     def parse_item(self, response):
         item = FinanceItem()
-        item['content'] = ''.join(response.xpath('//div[@class="article"]/p/text()').extract())
+        text = response.xpath('//div[@class="article"]/p/text()').extract()
+        content = []
+        for t in text:
+            content.append(["p", t])
+        item['content'] = str(content)
         item['source']  = 'sina'
         item['datetime']    = response.xpath('//div[@class="date-source"]/span[@class="date"]/text()').extract()[0]
         item['title']   = response.xpath("/html/head/title/text()").extract()[0]
         item['href']    = response.url
-        item['type']    = u'\u5373\u65f6'
+        item['type']    = 'sina'
       
         yield item

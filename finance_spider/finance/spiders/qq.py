@@ -21,11 +21,15 @@ class QqSpider(CrawlSpider):
 
     def parse_item(self, response):
         item = FinanceItem()
-        item['content'] = ''.join(response.xpath('//div[@class="Cnt-Main-Article-QQ"]/p/text()').extract())
+        text = response.xpath('//div[@class="Cnt-Main-Article-QQ"]/p/text()').extract()
+        content = []
+        for t in text:
+            content.append(["p", t])
+        item['content'] = str(content)
         item['source']  = 'qq'
         item['datetime']    = response.xpath('//div[@class="a_Info"]/span[@class="a_time"]/text()').extract()[0]
         item['title']   = response.xpath("/html/head/title/text()").extract()[0]
-        item['href']     = response.url
-        item['type']   = u'\u5373\u65f6'
+        item['href']    = response.url
+        item['type']   = 'qq'
 
         return item
