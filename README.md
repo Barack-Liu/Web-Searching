@@ -54,8 +54,7 @@ The structure of table "users".See Web-Searching\Front-End Image\F8.png<br>
 0614-LHY-When I crawl some new data today, the demo website still present the news crawed yesterday. I suspect that this issue may be caused by the reason that the newsSpider builts a new MongoDB database but the website still query for the old one. I will try to fix it.<br>
 0613-LHY-Requirement0,R2,R3,R4 and R5 are finished. The remaining task is to achive R1 and change database from MySQL to MongoDB<br>
 0612-LHY-Now the front-end read data from MongDB, we need XRC to modify it to read data from MySQL<br>
-0611-LHY-Website demo running<br>
-0611-LHY-Needs to connect to DB and develop searching function
+0611-LHY-Website demo running. I need to connect to DB and develop searching function
 
 ## Project Description
 In this project, you are asked to build a simple financial news website. All your data should be crawled from the following websites. These are some Chinese financial news websites. Note that for each website we give, you need to crawl all the news starting from year 2015 (including 2015) up to now.
