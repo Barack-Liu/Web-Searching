@@ -25,7 +25,7 @@ class SohuSpider(CrawlSpider):
         content = []
         for t in text:
             content.append(["p", t])
-        item['content'] = str(content)
+        item['content'] = content
         #item['source']  = 'sohu'
         item['datetime']    = response.xpath('//div[@class="article-info"]/span[@class="time"]/text()').extract()[0]
         item['title']   = response.xpath("/html/head/title/text()").extract()[0]

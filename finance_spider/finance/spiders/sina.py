@@ -23,7 +23,7 @@ class BangbingSpider(CrawlSpider):
         content = []
         for t in text:
             content.append(["p", t])
-        item['content'] = str(content)
+        item['content'] = content
         #item['source']  = 'sina'
         item['datetime']    = response.xpath('//div[@class="date-source"]/span[@class="date"]/text()').extract()[0]
         item['title']   = response.xpath("/html/head/title/text()").extract()[0]

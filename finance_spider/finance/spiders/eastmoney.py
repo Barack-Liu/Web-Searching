@@ -29,7 +29,7 @@ class EastmoneySpider(CrawlSpider):
         content = []
         for t in text:
             content.append(["p", t])
-        item['content'] = str(content)
+        item['content'] = content
         #item['source'] = 'eastmoney'
         item['datetime'] = response.xpath('//div[@class="time"]/text()').extract()[0]
         item['title'] = response.xpath('//div[@class="newsContent"]/h1/text()').extract()[0]

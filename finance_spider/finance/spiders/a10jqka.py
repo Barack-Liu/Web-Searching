@@ -32,7 +32,7 @@ class A10jqkaSpider(CrawlSpider):
         content = []
         for t in text:
             content.append(["p", t])
-        item['content'] = str(content) 
+        item['content'] = content
         #item['source']  = '10jqka'
         item['datetime']    = response.xpath('//div[@class="date"]/span/text()').extract()[0][:19]
         item['title']   = response.xpath("/html/head/title/text()").extract()[0]
