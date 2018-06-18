@@ -17,7 +17,7 @@ koa2<br>
 
 ## Homepage categories
 
-sina-sina  <br> 
+新浪财经-sina  <br> 
 同花顺财经-a10jqka  <br> 
 腾讯财经-qq  <br> 
 中国证券网-cnstock <br> 
