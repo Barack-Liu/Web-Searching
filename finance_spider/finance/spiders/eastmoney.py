@@ -34,7 +34,7 @@ class EastmoneySpider(CrawlSpider):
         item['datetime'] = response.xpath('//div[@class="time"]/text()').extract()[0]
         item['title'] = response.xpath('//div[@class="newsContent"]/h1/text()').extract()[0]
         item['href'] = response.url
-        item['type'] = 'eastmoney'
+        item['type'] = '大陆'
  
         yield item
         #yield Request(response.url)

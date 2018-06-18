@@ -30,6 +30,6 @@ class SohuSpider(CrawlSpider):
         item['datetime']    = response.xpath('//div[@class="article-info"]/span[@class="time"]/text()').extract()[0]
         item['title']   = response.xpath("/html/head/title/text()").extract()[0]
         item['href']     = response.url
-        item['type']    = 'sohu'
+        item['type']    = '大陆'
 
         yield item
