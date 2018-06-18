@@ -26,7 +26,7 @@ class CnstockSpider(CrawlSpider):
         for t in text:
             content.append(["p", t])
         item['content'] = str(content)
-        item['source']  = 'cnstock'
+        #item['source']  = 'cnstock'
         item['datetime']    = response.xpath('//div[@class="bullet"]/span[@class="timer"]/text()').extract()[0]
         item['title']   = response.xpath("/html/head/title/text()").extract()[0]
         item['href']    = response.url
