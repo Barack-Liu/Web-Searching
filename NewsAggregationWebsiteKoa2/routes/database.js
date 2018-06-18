@@ -1,3 +1,4 @@
+/*Definition of the schema "news" and "users" in the database "newsSpider"*/
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/newsSpider');
 const db = mongoose.connection;
@@ -7,12 +8,12 @@ db.on('open', function () {
 });
 
 const newsSchema = new mongoose.Schema({
-    type:String,
-    href:String,
     title:String,
     datetime:String,
-    content:Object
-
+    content:Object,
+    source:String,
+    href:String,
+    type:String
 });
 const newsModel = mongoose.model('news',newsSchema);
 
@@ -230,7 +231,7 @@ const getRecommendNews = async(email)=> {
     let scanList = [];
     let likeList = [];
     for( let key in user.scans) {
-        if(key === " " || key === "undefined" || key === "即时") {
+        if(key === " " || key === "undefined" || key === "eastmoney") {
             continue;
         }
         if(scanList.length < 5){
@@ -249,7 +250,7 @@ const getRecommendNews = async(email)=> {
     }
 
     for( let key in user.likes) {
-        if(key === " " || key === "undefined" || key === "即时") {
+        if(key === " " || key === "undefined" || key === "eastmoney") {
             continue;
         }
         if(likeList.length < 5){

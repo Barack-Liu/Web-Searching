@@ -1,6 +1,4 @@
-/**
- * Created by 泰佑 on 2017/5/23.
- */
+/*Declarations and definitions of the display functions*/
 
 //设置显示的位置
 function setLocation() {

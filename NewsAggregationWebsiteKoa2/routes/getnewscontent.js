@@ -1,3 +1,4 @@
+/*Methods definition about news content operation*/
 const router = require('koa-router')();
 const db = require('./database');
 

@@ -1,3 +1,4 @@
+/*Methods definition about news operation*/
 const router = require('koa-router')();
 const db = require('./database');
 
@@ -16,7 +17,7 @@ router.post('/recommend', async (ctx, next) => {
     const email = ctx.request.body.email || '';
 
     if(email === '')
-        ctx.body = await db.getTypeNews('即时');
+        ctx.body = await db.getTypeNews('easymoney');
     else {
         ctx.body = await db.getRecommendNews(email);
     }

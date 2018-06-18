@@ -1,6 +1,4 @@
-/**
- * Created by 泰佑 on 2017/5/24.
- */
+/*Functions when users scan the user webpage*/
 
 //设置显示哪些news_type
 function set_which_show() {
@@ -172,14 +170,14 @@ function getBrowsingHistory() {
     let dataList = [];
     let total = 0;
     for (let key in user.scans) {
-        if(key === " " || key === "undefined" || key === "即时" )
+        if(key === " " || key === "undefined" || key === "eastmoney" )
             continue;
         total += user.scans[key];
     }
 
     let i = 0;
     for (let key in user.scans) {
-        if(key === " " || key === "undefined" || key === "即时" || user.scans[key] <= total / 25)
+        if(key === " " || key === "undefined" || key === "eastmoney" || user.scans[key] <= total / 25)
             continue;
         let obj = {
             value: user.scans[key],
@@ -201,7 +199,7 @@ function getLikesNews() {
     let dataList = [];
     let i = 0;
     for (let key in user.likes) {
-        if(key === " " || key === "undefined" || key === "即时" )
+        if(key === " " || key === "undefined" || key === "eastmoney" )
             continue;
         let obj = {
             value: user.likes[key].length,

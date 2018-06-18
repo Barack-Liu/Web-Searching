@@ -1,5 +1,4 @@
-// const news_type_list = ['sina','a10jqka','qq','cnstock ','sohu','eastmoney','商业','财经','外汇',
-//                         '黄金','债券','银行','保险','信托','基金','理财','公司','新股'];
+/*Definitions of the homepage load functions*/
 
 let newsType;
 let newsData;
@@ -17,8 +16,8 @@ window.onload = function () {
 
     newsType = getCookie('newsType');
     if(newsType === '')
-        newsType = '即时';
-    document.getElementById("newsTitle").innerText = " " + newsType + "新闻";
+        newsType = 'eastmoney';
+    document.getElementById("newsTitle").innerText = " " + newsType + "news";
     email = getCookie('email');
     set_which_show();
     setUser();
@@ -101,7 +100,7 @@ function set_which_show() {
 // </div>
 //将数据库获取的data显示出来
 function getNewsList() {
-    if(newsType !== "推荐") {
+    if(newsType !== "eastmoney") {
         $.post("/news",
             {
                 type : newsType
@@ -138,10 +137,10 @@ function showNewsList() {
     }
 
     let likesNewsSet = new Set();
-    if(newsType === "推荐") {
+    if(newsType === "eastmoney") {
         let list = [];
         for (let key in user.likes) {
-            if (key!== "推荐")
+            if (key!== "eastmoney")
                 list = list.concat(user.likes[key]);
         }
         likesNewsSet = new Set(list);

@@ -1,6 +1,4 @@
-/**
- * Created by 泰佑 on 2017/5/23.
- */
+/*Functions when users login*/
 
 //设置显示的位置
 function setLocation() {

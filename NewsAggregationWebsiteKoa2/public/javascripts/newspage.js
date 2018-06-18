@@ -1,6 +1,4 @@
-/**
- * Created by 泰佑 on 2017/5/19.
- */
+/*Funtions when users scan the news webpage of different categories*/
 
 let news_id;
 let atPC = true;
