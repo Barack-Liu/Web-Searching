@@ -11,7 +11,7 @@ class A10jqkaSpider(CrawlSpider):
     allowed_domains = ['m.10jqka.com.cn']
     
     start_urls = []
-    with open('../start_urls.txt') as fp:
+    with open('../finance/start_urls.txt') as fp:
         data = fp.readline().strip()
         while data !='':
             start_urls.append(data)
