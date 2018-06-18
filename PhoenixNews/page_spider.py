@@ -105,5 +105,5 @@ class PageSpider(object):
             else :
                 return None
         except:
-            print("Something wrong")
+            print("Something wrog")
             return None
