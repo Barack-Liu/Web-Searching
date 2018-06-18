@@ -17,7 +17,7 @@ window.onload = function () {
     newsType = getCookie('newsType');
     if(newsType === '')
         newsType = 'eastmoney';
-    document.getElementById("newsTitle").innerText = " " + newsType + "news";
+    document.getElementById("newsTitle").innerText = " " + newsType + " news";
     email = getCookie('email');
     set_which_show();
     setUser();
