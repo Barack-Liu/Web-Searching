@@ -21,7 +21,7 @@ class CnstockSpider(CrawlSpider):
     def parse_item(self, response):
         item = FinanceItem()
         text = response.xpath('//div[@class="content"]/p/text()').extract()
-text = response.xpath('//p/text()').extract()
+        text = response.xpath('//p/text()').extract()
         content = []
         for t in text:
             content.append(["p", t])
