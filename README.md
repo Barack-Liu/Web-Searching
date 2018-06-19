@@ -21,7 +21,7 @@ The way we crawl the past news is to take a mirror image of the past news from w
 ## Homepage categories
 
 新浪财经-sina  <br> 
-同花顺财经-a10jqka  <br> 
+同花顺财经-10jqka  <br> 
 腾讯财经-qq  <br> 
 中国证券网-cnstock <br> 
 搜狐财经-sohu <br>
