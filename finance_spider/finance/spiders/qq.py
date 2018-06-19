@@ -30,6 +30,6 @@ class QqSpider(CrawlSpider):
         item['datetime']    = response.xpath('//div[@class="a_Info"]/span[@class="a_time"]/text()').extract()[0]
         item['title']   = response.xpath("/html/head/title/text()").extract()[0]
         item['href']    = response.url
-        item['type']   = '大陆'
+        item['type']   = 'qq'
 
         return item

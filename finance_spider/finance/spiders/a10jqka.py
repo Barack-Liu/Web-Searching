@@ -37,6 +37,6 @@ class A10jqkaSpider(CrawlSpider):
         item['datetime']    = response.xpath('//div[@class="date"]/span/text()').extract()[0][:19]
         item['title']   = response.xpath("/html/head/title/text()").extract()[0]
         item['href']    = response.url
-        item['type']    = '大陆'
+        item['type']    = '10jqka'
 
         yield item
