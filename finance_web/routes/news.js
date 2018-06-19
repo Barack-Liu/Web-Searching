@@ -1,4 +1,7 @@
-/*Methods definition about news operation*/
+/**
+ * Created by 泰佑 on 2017/5/18.
+ */
+
 const router = require('koa-router')();
 const db = require('./database');
 
@@ -17,7 +20,7 @@ router.post('/recommend', async (ctx, next) => {
     const email = ctx.request.body.email || '';
 
     if(email === '')
-        ctx.body = await db.getTypeNews('easymoney');
+        ctx.body = await db.getTypeNews('即时');
     else {
         ctx.body = await db.getRecommendNews(email);
     }

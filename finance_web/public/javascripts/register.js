@@ -1,4 +1,6 @@
-/*Functions when users register*/
+/**
+ * Created by 泰佑 on 2017/5/20.
+ */
 
 
 //设置显示的位置

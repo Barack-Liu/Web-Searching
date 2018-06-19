@@ -1,4 +1,4 @@
-/*Methods definition about user operation*/
+
 const router = require('koa-router')();
 const db = require('./database');
 

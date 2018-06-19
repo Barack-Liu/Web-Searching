@@ -1,4 +1,7 @@
-/*Definition of the schema "news" and "users" in the database "newsSpider"*/
+/**
+ * Created by 泰佑 on 2017/5/18.
+ */
+
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/newsSpider');
 const db = mongoose.connection;
@@ -8,12 +11,12 @@ db.on('open', function () {
 });
 
 const newsSchema = new mongoose.Schema({
+    type:String,
+    href:String,
     title:String,
     datetime:String,
-    content:Object,
-    source:String,
-    href:String,
-    type:String
+    content:Object
+
 });
 const newsModel = mongoose.model('news',newsSchema);
 
@@ -231,7 +234,7 @@ const getRecommendNews = async(email)=> {
     let scanList = [];
     let likeList = [];
     for( let key in user.scans) {
-        if(key === " " || key === "undefined" || key === "eastmoney") {
+        if(key === " " || key === "undefined" || key === "即时") {
             continue;
         }
         if(scanList.length < 5){
@@ -250,7 +253,7 @@ const getRecommendNews = async(email)=> {
     }
 
     for( let key in user.likes) {
-        if(key === " " || key === "undefined" || key === "eastmoney") {
+        if(key === " " || key === "undefined" || key === "即时") {
             continue;
         }
         if(likeList.length < 5){

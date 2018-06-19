@@ -1,4 +1,9 @@
-/*Definitions of the homepage load functions*/
+/**
+ * Created by 泰佑 on 2017/5/17.
+ */
+
+// const news_type_list = ['大陆','国际','台湾','社会','军事','港澳','历史','财经','娱乐',
+//                         '体育','时尚','科技','读书','游戏','文化','公益','旅游','健康'];
 
 let newsType;
 let newsData;
@@ -16,8 +21,8 @@ window.onload = function () {
 
     newsType = getCookie('newsType');
     if(newsType === '')
-        newsType = 'eastmoney';
-    document.getElementById("newsTitle").innerText = " " + newsType + " news";
+        newsType = '即时';
+    document.getElementById("newsTitle").innerText = " " + newsType + "新闻";
     email = getCookie('email');
     set_which_show();
     setUser();
@@ -100,7 +105,7 @@ function set_which_show() {
 // </div>
 //将数据库获取的data显示出来
 function getNewsList() {
-    if(newsType !== "eastmoney") {
+    if(newsType !== "推荐") {
         $.post("/news",
             {
                 type : newsType
@@ -137,10 +142,10 @@ function showNewsList() {
     }
 
     let likesNewsSet = new Set();
-    if(newsType === "eastmoney") {
+    if(newsType === "推荐") {
         let list = [];
         for (let key in user.likes) {
-            if (key!== "eastmoney")
+            if (key!== "推荐")
                 list = list.concat(user.likes[key]);
         }
         likesNewsSet = new Set(list);

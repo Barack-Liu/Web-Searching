@@ -1,4 +1,7 @@
-/*Methods definition about news content operation*/
+/**
+ * Created by 泰佑 on 2017/5/19.
+ */
+
 const router = require('koa-router')();
 const db = require('./database');
 
