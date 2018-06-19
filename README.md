@@ -14,6 +14,9 @@ koa2<br>
 3.cd finance_web && npm start  &nbsp;&nbsp; This process is to start the local server.<br>
 4.surf on http://localhost:3000/ to view website demo &nbsp;&nbsp; Now the website demo should function well.<br>
 
+## Real-time spider
+We write a crontab task plan to set an alarm clock which run the spider every hour.<br>
+The way we crawl the past news is to take a mirror image of the past news from web.archive.org. We get the homepage from it and then crawl the information.<br>
 
 ## Homepage categories
 
