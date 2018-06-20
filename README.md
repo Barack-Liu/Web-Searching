@@ -13,7 +13,9 @@ jieba<br>
 1.cd finance_web && npm install &nbsp;&nbsp; This process is to install the neccessary modules. It's only needed at the first execution.<br>
 2.cd finance_spider/ && ./start.sh  &nbsp;&nbsp; This process is to craw the news. The news data will be save into a collection "news" in the mongoDB database "newsSpider". When users log in, another collection "users" will be created in the database "newsSpider".<br>
 3.cd finance_web && npm start  &nbsp;&nbsp; This process is to start the local server.<br>
-4.surf on http://localhost:3000/ to view website demo &nbsp;&nbsp; Now the website demo should function well.<br>
+4.cd finance_search && python3 manage.py migrate & python3 manage.py runserver &nbsp;&nbsp; This process is to start the search service.<br>
+5.surf on http://localhost:3000/ to view website demo &nbsp;&nbsp; Now the website demo should function well.<br>
+6.click on the left top, you can jump to the search webpage on http://localhost:8000/ to search history news.<br>
 
 ## Real-time spider
 We write a crontab task plan to set an alarm clock which run the spider every hour.<br>
