@@ -9,7 +9,7 @@ class BangbingSpider(CrawlSpider):
     allowed_domains = ['finance.sina.com.cn']
 
     start_urls = []
-    with open('/root/Web-Searching/finance_spider/finance/urls/sina.txt') as fp:
+    with open('./finance/urls/sina.txt') as fp:
         data = fp.readline().strip()
         while data !='':
             start_urls.append(data)

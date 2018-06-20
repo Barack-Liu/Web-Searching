@@ -10,7 +10,7 @@ class EastmoneySpider(CrawlSpider):
 
     start_urls = []
 
-    with open('/root/Web-Searching/finance_spider/finance/urls/eastmoney.txt') as fp:
+    with open('./finance/urls/eastmoney.txt') as fp:
         data = fp.readline().strip()
         while data !='':
             start_urls.append(data)

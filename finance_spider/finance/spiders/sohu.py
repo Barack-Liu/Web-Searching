@@ -11,7 +11,7 @@ class SohuSpider(CrawlSpider):
     allowed_domains = ['www.sohu.com']
 
     start_urls = []
-    with open('/root/Web-Searching/finance_spider/finance/urls/sohu.txt') as fp:
+    with open('./finance/urls/sohu.txt') as fp:
         data = fp.readline().strip()
         while data !='':
             start_urls.append(data)

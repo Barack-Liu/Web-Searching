@@ -10,7 +10,7 @@ class CnstockSpider(CrawlSpider):
     allowed_domains = ['news.cnstock.com']
 
     start_urls = []
-    with open('/root/Web-Searching/finance_spider/finance/urls/cnstock.txt') as fp:
+    with open('./finance/urls/cnstock.txt') as fp:
         data = fp.readline().strip()
         while data !='':
             start_urls.append(data)

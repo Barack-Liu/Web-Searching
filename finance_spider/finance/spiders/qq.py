@@ -11,7 +11,7 @@ class QqSpider(CrawlSpider):
     allowed_domains = ['finance.qq.com']
     start_urls = []
 
-    with open('/root/Web-Searching/finance_spider/finance/urls/qq.txt') as fp:
+    with open('./finance/urls/qq.txt') as fp:
         data = fp.readline().strip()
         while data !='':
             start_urls.append(data)
