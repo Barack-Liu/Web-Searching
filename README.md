@@ -7,6 +7,7 @@ MongoDB (db version 2.6.x)<br>
 NodeJs 10.x<br>
 bootstrap<br>
 koa2<br> 
+jieba<br>
 
 ## 	Execution
 1.cd finance_web && npm install &nbsp;&nbsp; This process is to install the neccessary modules. It's only needed at the first execution.<br>
