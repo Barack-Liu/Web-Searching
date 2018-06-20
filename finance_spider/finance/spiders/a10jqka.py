@@ -11,11 +11,11 @@ class A10jqkaSpider(CrawlSpider):
     allowed_domains = ['m.10jqka.com.cn']
     
     start_urls = []
-    with open('./finance/start_urls.txt') as fp:
+    with open('/root/Web-Searching/finance_spider/finance/urls/a10jqka.txt') as fp:
         data = fp.readline().strip()
         while data !='':
             start_urls.append(data)
-            data = fp.readline()
+            data = fp.readline().strip()
 
     rules = (
         Rule(LinkExtractor(allow='.*?/c[0-9]*\.shtml'), callback='parse_item', follow=True),
@@ -33,7 +33,7 @@ class A10jqkaSpider(CrawlSpider):
         for t in text:
             content.append(["p", t])
         item['content'] = content
-        #item['source']  = '10jqka'
+        item['source']  = '10jqka'
         item['datetime']    = response.xpath('//div[@class="date"]/span/text()').extract()[0][:19]
         item['title']   = response.xpath("/html/head/title/text()").extract()[0]
         item['href']    = response.url

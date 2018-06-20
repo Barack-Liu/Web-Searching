@@ -9,7 +9,13 @@ from finance.items import FinanceItem
 class SohuSpider(CrawlSpider):
     name = 'sohu'
     allowed_domains = ['www.sohu.com']
-    start_urls = ['http://www.sohu.com/']
+
+    start_urls = []
+    with open('/root/Web-Searching/finance_spider/finance/urls/sohu.txt') as fp:
+        data = fp.readline().strip()
+        while data !='':
+            start_urls.append(data)
+            data = fp.readline().strip()
 
     rules = (
         Rule(LinkExtractor(allow=r'.*?/a/[0-9]{9}_[0-9]{6}'), callback='parse_item', follow=True),
@@ -26,7 +32,7 @@ class SohuSpider(CrawlSpider):
         for t in text:
             content.append(["p", t])
         item['content'] = content
-        #item['source']  = 'sohu'
+        item['source']  = 'sohu'
         item['datetime']    = response.xpath('//div[@class="article-info"]/span[@class="time"]/text()').extract()[0]
         item['title']   = response.xpath("/html/head/title/text()").extract()[0]
         item['href']     = response.url

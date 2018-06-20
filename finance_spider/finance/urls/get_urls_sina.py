@@ -1,0 +1,32 @@
+import requests
+import time
+import re
+
+p = re.compile("[0-9]{14}")
+
+href = 'http://finance.sina.com.cn'
+
+url = 'https://web.archive.org/__wb/calendarcaptures?url={}&selected_year={}'
+
+times = []
+for year in range(2016,2019):
+    r = requests.get(url.format(href, year))
+    ts = p.findall(r.content)
+    for t in ts:
+        times.append(t)
+    r.close()
+
+#print 'time collect over'
+
+p = re.compile("http://finance.sina.com.cn/[a-z0-9/\-]+?/doc-[a-z]{8}[0-9]{7}\.shtml")
+start_url = 'http://web.archive.org/web/{}/{}'
+for t in times:
+    try:
+        r = requests.get(start_url.format(t, href))
+        #print start_url.format(t, href)
+        urls = p.findall(r.content)
+        for url in urls:
+            print url
+        r.close()
+    except Exception as e:
+        pass

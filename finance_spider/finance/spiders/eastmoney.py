@@ -7,13 +7,14 @@ from finance.items import FinanceItem
 class EastmoneySpider(CrawlSpider):
     name = "eastmoney"
     allowed_domains = ["finance.eastmoney.com"]
-    start_urls = (
-        'http://www.eastmoney.com',
-        'http://finance.eastmoney.com/yaowen.html',
-        'http://finance.eastmoney.com/pinglun.html',
-        'http://finance.eastmoney.com/news/cgnjj.html',
-        'http://finance.eastmoney.com/news/cgjjj.html'
-    )
+
+    start_urls = []
+
+    with open('/root/Web-Searching/finance_spider/finance/urls/eastmoney.txt') as fp:
+        data = fp.readline().strip()
+        while data !='':
+            start_urls.append(data)
+            data = fp.readline().strip() 
 
     rules = (
         Rule(LinkExtractor(allow='.*?/n.*?.\/[0-9]*,[0-9]*\.html'), callback='parse_item', follow=True),
@@ -25,12 +26,12 @@ class EastmoneySpider(CrawlSpider):
 
     def parse_item(self, response):
         item = FinanceItem()
-        text    = response.xpath('//div[@class="Body"]/p/text()').extract()
+        text	= response.xpath('//div[@class="Body"]/p/text()').extract()
         content = []
         for t in text:
             content.append(["p", t])
         item['content'] = content
-        #item['source'] = 'eastmoney'
+        item['source'] = 'eastmoney'
         item['datetime'] = response.xpath('//div[@class="time"]/text()').extract()[0]
         item['title'] = response.xpath('//div[@class="newsContent"]/h1/text()').extract()[0]
         item['href'] = response.url
